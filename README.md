@@ -1,2 +1,2 @@
 # sofiareyesfranco.github.io
-Sofia Reyes Franco Personal Website
+Sofia Reyes Franco's Personal Website
