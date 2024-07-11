@@ -101,7 +101,7 @@ footer {
 
 nav a, #welcome a {
     text-decoration: none; /* Removes underline from all links in nav and welcome section */
-    color: #1a0dab; /* This is the default blue color for hyperlinks; change as needed */
+    color: #ffffff; /* This is the default blue color for hyperlinks; change as needed */
 }
 
 .container {
