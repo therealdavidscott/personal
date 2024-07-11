@@ -12,7 +12,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #ebeab5;
+    background-color: #7bb9fb;
     padding: 0.5em 0;
     border-bottom: 1px solid #eaeaea;
 }
@@ -83,7 +83,7 @@ nav a {
 footer {
     width: 100%;
     flex-shrink: 0;
-    background-color: #ebeab5;
+    background-color: #7bb9fb;
     text-align: center;
     padding: 10px 0;
 }
@@ -123,7 +123,7 @@ nav a, #welcome a {
 }
 
 .download-cv {
-    background-color: #4CAF50; /* Green */
+    background-color: #FFD700; /* Green */
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -135,7 +135,7 @@ nav a, #welcome a {
 }
 
 .download-cv:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #907f1b; /* Darker green */
 }
 
 @media (max-width: 768px) {
