@@ -160,7 +160,7 @@ nav a, #welcome a {
 
 .latest-news h2 {
     margin-bottom: 1em;
-    color: #192231; /* Dark blue text */
+    color: #ffffff; /* Dark blue text */
 }
 
 .latest-news ul {
@@ -185,7 +185,7 @@ nav a, #welcome a {
 }
 
 .news-item {
-    background-color: #98878F; /* grey background for each item */
+    background-color: #c3b6bc; /* grey background for each item */
     margin-bottom: 10px; /* Space between news items */
     padding: 10px;
     border-radius: 5px; /* Rounded corners for polish */
