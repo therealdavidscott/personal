@@ -12,7 +12,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #ebeab5;
     padding: 0.5em 0;
     border-bottom: 1px solid #eaeaea;
 }
@@ -83,7 +83,7 @@ nav a {
 footer {
     width: 100%;
     flex-shrink: 0;
-    background-color: #f8f8f8;
+    background-color: #ebeab5;
     text-align: center;
     padding: 10px 0;
 }
