@@ -86,6 +86,7 @@ footer {
     background-color: #985E6D;
     text-align: center;
     padding: 10px 0;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -102,6 +103,11 @@ footer {
 nav a, #welcome a {
     text-decoration: none; /* Removes underline from all links in nav and welcome section */
     color: #ffffff; /* This is the default blue color for hyperlinks; change as needed */
+}
+
+nav a:hover,
+#welcome a:hover {
+    color: #98878F; /* Change this to the color you want on hover */
 }
 
 .container {
