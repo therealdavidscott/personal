@@ -2,7 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333; /* Dark grey text */
+    color: #192231; /* Dark blue text */
 
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #7bb9fb;
+    background-color: #985E6D;
     padding: 0.5em 0;
     border-bottom: 1px solid #eaeaea;
 }
@@ -22,13 +22,13 @@ nav {
     justify-content: center; /* Centers the nav links */
     align-items: center; /* Centers the nav links vertically */
     flex-wrap: wrap; /* Wraps the nav links to the next line on small screens */
-    gap: 20px; /* Spaces out the nav links */
+    gap: 50px; /* Spaces out the nav links */
     text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
-    color: #0056b3;
+    color: #192231;
     padding: 0.5em 1em; /* Padding around the links for clickability */
     transition: color 0.3s ease;
 }
@@ -83,7 +83,7 @@ nav a {
 footer {
     width: 100%;
     flex-shrink: 0;
-    background-color: #7bb9fb;
+    background-color: #985E6D;
     text-align: center;
     padding: 10px 0;
 }
@@ -123,8 +123,8 @@ nav a, #welcome a {
 }
 
 .download-cv {
-    background-color: #FFD700; /* Green */
-    color: white;
+    background-color: #98878F; /* Grey */
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-align: center;
     display: block;
@@ -135,7 +135,7 @@ nav a, #welcome a {
 }
 
 .download-cv:hover {
-    background-color: #907f1b; /* Darker green */
+    background-color: #72666c; /* Darker grey */
 }
 
 @media (max-width: 768px) {
@@ -160,7 +160,7 @@ nav a, #welcome a {
 
 .latest-news h2 {
     margin-bottom: 1em;
-    color: #333; /* Dark grey text */
+    color: #192231; /* Dark blue text */
 }
 
 .latest-news ul {
@@ -185,7 +185,7 @@ nav a, #welcome a {
 }
 
 .news-item {
-    background-color: white; /* White background for each item */
+    background-color: #98878F; /* White background for each item */
     margin-bottom: 10px; /* Space between news items */
     padding: 10px;
     border-radius: 5px; /* Rounded corners for polish */
