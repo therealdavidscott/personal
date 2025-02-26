@@ -202,3 +202,13 @@ nav a:hover,
 .news-item:last-child {
     margin-bottom: 0; /* No margin for the last item */
 }
+
+.projects-container {
+    max-width: 900px; /* Adjust as needed */
+    width: 90%; /* Ensures responsiveness */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a clean look */
+    border-radius: 8px;
+}
