@@ -13,12 +13,17 @@ body {
 .projects-container {
     max-width: 900px; /* Adjust as needed */
     width: 60%; /* Ensures responsiveness */
-    margin: 0 auto; /* Centers the content */
+    margin: 20 auto; /* Centers the content */
     padding: 20px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a clean look */
     border-radius: 8px;
 }
+
+/* main {
+    max-width: 800px;
+    margin: 0 auto;
+} */
 
 header {
     width: 100%;
