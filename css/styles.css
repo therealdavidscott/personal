@@ -12,7 +12,7 @@ body {
 
 .projects-container {
     max-width: 900px; /* Adjust as needed */
-    width: 90%; /* Ensures responsiveness */
+    width: 60%; /* Ensures responsiveness */
     margin: 0 auto; /* Centers the content */
     padding: 20px;
     background-color: white;
