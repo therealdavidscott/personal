@@ -1,2 +1,2 @@
-# sofiareyesfranco.github.io
-Sofia Reyes Franco's Personal Website
+# therealdavidscott.github.io
+David Scott's Personal Website

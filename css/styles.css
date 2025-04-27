@@ -2,21 +2,21 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    color: #192231; /* Dark blue text */
-
+    color: #1a1f2b; /* Deep navy text */
+    background-color: #ffffff; /* White background */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content */
-    min-height: 100vh; /* Full viewport height */
+    align-items: center;
+    min-height: 100vh;
 }
 
 .projects-container {
-    max-width: 900px; /* Adjust as needed */
-    width: 60%; /* Ensures responsiveness */
-    margin: 20 auto; /* Centers the content */
-    padding:10px 50px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a clean look */
+    max-width: 900px;
+    width: 60%;
+    margin: 20 auto;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
@@ -27,31 +27,37 @@ body {
 
 header {
     width: 100%;
-    background-color: #985E6D;
+    background-color: #1a1f2b; /* Deep navy */
     padding: 0.5em 0;
     border-bottom: 1px solid #eaeaea;
+    color: white;
 }
 
 nav {
     display: flex;
-    justify-content: center; /* Centers the nav links */
-    align-items: center; /* Centers the nav links vertically */
-    flex-wrap: wrap; /* Wraps the nav links to the next line on small screens */
-    gap: 50px; /* Spaces out the nav links */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
     text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
-    color: #192231;
-    padding: 0.5em 1em; /* Padding around the links for clickability */
+    color: #ffffff; /* White nav links */
+    padding: 0.5em 1em;
     transition: color 0.3s ease;
 }
 
+nav a:hover,
+#welcome a:hover {
+    color: #d4af37; /* Gold on hover */
+}
+
 .profile-photo {
-    width: 150px; /* Adjust for your image */
+    width: 150px;
     border-radius: 50%;
-    margin: 1em auto; /* Center the image */
+    margin: 1em auto;
 }
 
 .profile-section h2 {
@@ -98,7 +104,7 @@ nav a {
 footer {
     width: 100%;
     flex-shrink: 0;
-    background-color: #985E6D;
+    background-color: #1a1f2b; /* Deep navy footer */
     text-align: center;
     padding: 10px 0;
     color: white;
@@ -113,16 +119,11 @@ footer {
         max-width: 100%;
         text-align: center;
     }
-}
 
-nav a, #welcome a {
-    text-decoration: none; /* Removes underline from all links in nav and welcome section */
-    color: #ffffff; /* This is the default blue color for hyperlinks; change as needed */
-}
-
-nav a:hover,
-#welcome a:hover {
-    color: #98878F; /* Change this to the color you want on hover */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .container {
@@ -139,24 +140,23 @@ nav a:hover,
 }
 
 .left-column {
-    /* Adjust width as necessary, make sure it's responsive */
     width: 20%;
 }
 
 .download-cv {
-    background-color: #98878F; /* Grey */
-    color: rgb(255, 255, 255);
+    background-color: #d4af37; /* Gold button */
+    color: #1a1f2b; /* Navy text on button */
     padding: 10px 20px;
     text-align: center;
     display: block;
     width: max-content;
-    margin: 1em auto; /* Center the button */
+    margin: 1em auto;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .download-cv:hover {
-    background-color: #72666c; /* Darker grey */
+    background-color: #b08b2d; /* Darker gold hover */
 }
 
 @media (max-width: 768px) {
@@ -168,11 +168,6 @@ nav a:hover,
         width: 100%;
         margin-bottom: 1em;
     }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .latest-news {
@@ -181,12 +176,12 @@ nav a:hover,
 
 .latest-news h2 {
     margin-bottom: 1em;
-    color: #ffffff; /* Dark blue text */
+    color: #1a1f2b; /* Deep navy for latest news header */
 }
 
 .latest-news ul {
-    list-style-type: none; /* Removes the default list styling */
-    padding-left: 0; /* Aligns the list with the rest of the content */
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .latest-news li {
@@ -194,8 +189,9 @@ nav a:hover,
 }
 
 .latest-news li strong {
-    color: #0056b3; /* Highlight the date */
+    color: #d4af37; /* Gold for dates */
 }
+
 /*gi fjfjt*/
 
 .news-section {
@@ -203,19 +199,17 @@ nav a:hover,
     background-color: #f9f9f9; /* Light background for news section */
     padding: 20px;
     margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for depth */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .news-item {
-    background-color: #c3b6bc; /* grey background for each item */
-    margin-bottom: 10px; /* Space between news items */
+    background-color: #f8f9fa; /* Very light gray card background */
+    margin-bottom: 10px;
     padding: 10px;
-    border-radius: 5px; /* Rounded corners for polish */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow for each item */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .news-item:last-child {
-    margin-bottom: 0; /* No margin for the last item */
+    margin-bottom: 0;
 }
-
-
