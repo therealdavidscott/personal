@@ -1,6 +1,8 @@
 /* GLOBAL */
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -8,11 +10,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
     color: #1a1f2b; /* Deep navy text */
-    background-color: #ffffff; /* White background */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /* HEADER AND NAV */
@@ -20,30 +19,29 @@ body {
 header {
     width: 100%;
     background-color: #1a1f2b;
-    padding: 0.5em 0;
-    border-bottom: 1px solid #eaeaea;
+    padding: 1em 0;
     color: white;
+    text-align: center;
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 50px;
-    text-decoration: none;
+    flex-wrap: wrap;
 }
 
 nav a {
-    text-decoration: none;
     color: #ffffff;
+    text-decoration: none;
     padding: 0.5em 1em;
     transition: color 0.3s ease;
 }
 
 nav a:hover,
 #welcome a:hover {
-    color: #d4af37; /* Gold on hover */
+    color: #d4af37; /* Gold hover */
 }
 
 /* MAIN FLEX LAYOUT */
@@ -51,32 +49,28 @@ nav a:hover,
 .main-flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    justify-content: center;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2em;
+    width: 100%;
+    margin: 2em auto;
+    padding: 0 2em;
     gap: 2em;
 }
 
+/* SIDEBAR (LEFT COLUMN) */
+
 .left-column {
-    flex: 0 0 250px; /* Sidebar fixed width */
+    flex: 0 0 250px;
     text-align: center;
 }
 
-.right-column {
-    flex: 1; /* Main content takes rest */
-    max-width: 800px;
-    text-align: left;
-}
-
-/* PROFILE SIDEBAR */
-
 .profile-photo {
     width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
-    margin: 1em auto;
+    margin-bottom: 1em;
 }
 
 .location {
@@ -90,15 +84,23 @@ nav a:hover,
 
 .social-links a.icon {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 .social-links img {
     width: 24px;
-    height: auto;
+    height: 24px;
 }
 
-/* MUSIC SECTION STYLES */
+/* MAIN CONTENT (RIGHT COLUMN) */
+
+.right-column {
+    flex: 1;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* MUSIC SECTION */
 
 .music-section {
     width: 100%;
@@ -109,7 +111,7 @@ nav a:hover,
     font-size: 2.5em;
     color: #1a1f2b;
     margin-bottom: 20px;
-    border-bottom: 3px solid #d4af37; /* Gold underline */
+    border-bottom: 3px solid #d4af37;
     display: inline-block;
     padding-bottom: 8px;
 }
@@ -128,20 +130,20 @@ nav a:hover,
 footer {
     width: 100%;
     background-color: #1a1f2b;
-    text-align: center;
-    padding: 10px 0;
     color: white;
-    margin-top: auto;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
 }
 
-/* NEWS SECTION (if you have it somewhere else) */
+/* NEWS SECTION (if needed elsewhere) */
 
 .news-section {
     width: 100%;
     background-color: #f9f9f9;
     padding: 20px;
     margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .news-item {
@@ -149,14 +151,14 @@ footer {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .news-item:last-child {
     margin-bottom: 0;
 }
 
-/* MEDIA QUERIES - MOBILE RESPONSIVE */
+/* RESPONSIVE (MOBILE) */
 
 @media (max-width: 768px) {
     .main-flex-container {
@@ -164,9 +166,11 @@ footer {
         padding: 1em;
     }
 
-    .left-column, .right-column {
-        max-width: 100%;
+    .left-column,
+    .right-column {
         width: 100%;
+        max-width: 100%;
+        text-align: center;
     }
 
     nav {
