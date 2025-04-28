@@ -48,24 +48,22 @@ nav a:hover,
 
 .main-flex-container {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 2em auto;
-    gap: 4em; /* Slightly bigger gap to look natural */
+    padding: 0 2em;
+    gap: 2em;
 }
+
+/* SIDEBAR (LEFT COLUMN) */
 
 .left-column {
-    flex: 0 0 200px; /* Smaller sidebar */
+    flex: 0 0 50px;
     text-align: center;
 }
-
-.right-column {
-    flex: 1; /* Fully expand the music content */
-    text-align: left;
-}
-
 
 .profile-photo {
     width: 150px;
